@@ -37,10 +37,13 @@
   <h2 :style="headerStyleObject">Style Object</h2>
   <div :style="[baseStyleObject, successStyleObject]">Success Style</div>
   <div :style="[baseStyleObject, dangerStyleObject]">Danger Style</div>
+  <ConditionalRendering />
 </template>
 
 <script>
+import ConditionalRendering from "./components/ConditionalRendering.vue";
 export default {
+  components: { ConditionalRendering },
   name: "App",
   data() {
     return {
