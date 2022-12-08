@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       lol: "Lol",
-      names: ["  Bruce", "Clark", "Diana"],
+      names: ["Bruce", "Clark", "Diana"],
       fullNames: [
         { first: "Bruce", last: "Wayne" },
         { first: "Clark", last: "Kent" },

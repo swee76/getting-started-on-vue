@@ -39,15 +39,18 @@
   <div :style="[baseStyleObject, dangerStyleObject]">Danger Style</div>
   <conditional-rendering />
   <list-rendering />
+  <list-and-keys />
 </template>
 
 <script>
 import ConditionalRendering from "./components/ConditionalRendering.vue";
+import ListAndKeys from "./components/ListAndKeys.vue";
 import ListRendering from "./components/ListRendering.vue";
 export default {
   components: {
     "conditional-rendering": ConditionalRendering,
     "list-rendering": ListRendering,
+    "list-and-keys": ListAndKeys,
   },
   name: "App",
   data() {
