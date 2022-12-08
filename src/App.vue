@@ -45,6 +45,7 @@
   <event-handling />
   <form-handling />
   <computed-properties />
+  <computed-setter />
 </template>
 
 <script>
@@ -56,6 +57,7 @@ import MethodsVue from "./components/Methods.vue";
 import EventHandling from "./components/EventHandling.vue";
 import FormHandling from "./components/FormHandling.vue";
 import ComputedProperties from "./components/ComputedProperties.vue";
+import ComputedSetter from "./components/ComputedSetter.vue";
 
 export default {
   components: {
@@ -67,6 +69,7 @@ export default {
     "event-handling": EventHandling,
     "form-handling": FormHandling,
     "computed-properties": ComputedProperties,
+    "computed-setter": ComputedSetter,
   },
   name: "App",
   data() {
