@@ -40,9 +40,11 @@
   <conditional-rendering />
   <list-rendering />
   <list-and-keys />
+  <conditional-list-rendering />
 </template>
 
 <script>
+import ConditionalListRendering from "./components/ConditionalListRendering.vue";
 import ConditionalRendering from "./components/ConditionalRendering.vue";
 import ListAndKeys from "./components/ListAndKeys.vue";
 import ListRendering from "./components/ListRendering.vue";
@@ -51,6 +53,7 @@ export default {
     "conditional-rendering": ConditionalRendering,
     "list-rendering": ListRendering,
     "list-and-keys": ListAndKeys,
+    "conditional-list-rendering": ConditionalListRendering,
   },
   name: "App",
   data() {
