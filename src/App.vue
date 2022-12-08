@@ -41,6 +41,7 @@
   <list-rendering />
   <list-and-keys />
   <conditional-list-rendering />
+  <methods-in-vue />
 </template>
 
 <script>
@@ -48,12 +49,14 @@ import ConditionalListRendering from "./components/ConditionalListRendering.vue"
 import ConditionalRendering from "./components/ConditionalRendering.vue";
 import ListAndKeys from "./components/ListAndKeys.vue";
 import ListRendering from "./components/ListRendering.vue";
+import MethodsVue from "./components/Methods.vue";
 export default {
   components: {
     "conditional-rendering": ConditionalRendering,
     "list-rendering": ListRendering,
     "list-and-keys": ListAndKeys,
     "conditional-list-rendering": ConditionalListRendering,
+    "methods-in-vue": MethodsVue,
   },
   name: "App",
   data() {
