@@ -44,6 +44,7 @@
   <methods-in-vue />
   <event-handling />
   <form-handling />
+  <computed-properties />
 </template>
 
 <script>
@@ -54,6 +55,7 @@ import ListRendering from "./components/ListRendering.vue";
 import MethodsVue from "./components/Methods.vue";
 import EventHandling from "./components/EventHandling.vue";
 import FormHandling from "./components/FormHandling.vue";
+import ComputedProperties from "./components/ComputedProperties.vue";
 
 export default {
   components: {
@@ -64,6 +66,7 @@ export default {
     "methods-in-vue": MethodsVue,
     "event-handling": EventHandling,
     "form-handling": FormHandling,
+    "computed-properties": ComputedProperties,
   },
   name: "App",
   data() {
