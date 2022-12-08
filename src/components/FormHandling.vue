@@ -4,10 +4,15 @@
         {{ JSON.stringify(formValues, null, 2) }}
     </pre>
   </div>
-  <form @submit="submitForm">
+  <form @submit.prevent="submitForm">
     <div>
       <label for="name">Name</label>
-      <input type="text" id="name" v-model="formValues.name" />
+      <input
+        @keyup.enter="submitForm"
+        type="text"
+        id="name"
+        v-model.trim.lazy="formValues.name"
+      />
     </div>
     <div>
       <label for="profile">Profile Summary</label>
@@ -109,8 +114,12 @@
       <label for="10+">10+</label>
     </div>
     <div>
-      <button type="submit">Submit</button>
+      <label for="age">Age</label>
+      <input type="number" id="age" v-model.number="formValues.age" />
     </div>
+    <!-- <div>
+      <button type="submit">Submit</button>
+    </div> -->
   </form>
 </template>
 
@@ -127,6 +136,7 @@ export default {
         remoteWork: "no",
         skillSet: [],
         yearsOfExperience: "",
+        age: null,
       },
     };
   },
@@ -140,6 +150,10 @@ export default {
 </script>
 
 <style>
+div,
+input {
+  text-align: left;
+}
 label {
   font-weight: bold;
   display: flex;
@@ -149,6 +163,7 @@ input + label {
   font-weight: bold;
   display: inline-flex;
   margin-right: 20px;
+  text-align: left;
 }
 input[type="text"],
 textarea,
@@ -157,6 +172,7 @@ select {
   width: 400px;
   padding: 6px 12px;
   font-size: 14px;
+  text-align: left;
   line-height: 1.42857143;
   color: #555;
   background-color: #fff;
