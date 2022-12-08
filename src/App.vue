@@ -42,6 +42,7 @@
   <list-and-keys />
   <conditional-list-rendering />
   <methods-in-vue />
+  <event-handling />
 </template>
 
 <script>
@@ -50,6 +51,7 @@ import ConditionalRendering from "./components/ConditionalRendering.vue";
 import ListAndKeys from "./components/ListAndKeys.vue";
 import ListRendering from "./components/ListRendering.vue";
 import MethodsVue from "./components/Methods.vue";
+import EventHandling from "./components/EventHandling.vue";
 export default {
   components: {
     "conditional-rendering": ConditionalRendering,
@@ -57,6 +59,7 @@ export default {
     "list-and-keys": ListAndKeys,
     "conditional-list-rendering": ConditionalListRendering,
     "methods-in-vue": MethodsVue,
+    "event-handling": EventHandling,
   },
   name: "App",
   data() {
