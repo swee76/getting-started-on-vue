@@ -47,6 +47,7 @@
   <computed-properties />
   <computed-setter />
   <watchers-vue />
+  <person-vue />
 </template>
 
 <script>
@@ -60,6 +61,7 @@ import FormHandling from "./components/FormHandling.vue";
 import ComputedProperties from "./components/ComputedProperties.vue";
 import ComputedSetter from "./components/ComputedSetter.vue";
 import WatchersVue from "./components/Watchers.vue";
+import Person from "./components/CustomEventsAndCompositionAPI/Person.vue";
 
 export default {
   components: {
@@ -73,6 +75,7 @@ export default {
     "computed-properties": ComputedProperties,
     "computed-setter": ComputedSetter,
     "watchers-vue": WatchersVue,
+    "person-vue": Person,
   },
   name: "App",
   data() {
